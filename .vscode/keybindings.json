@@ -1,0 +1,8 @@
+// Add those to your keybindings.json to automate docs building on CTRL+D
+[
+    {
+        "key": "ctrl+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "docs"
+    }
+]
