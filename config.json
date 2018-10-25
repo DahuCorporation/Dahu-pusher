@@ -1,3 +1,7 @@
 {
-    "debugmode": true
+    "debugmode": true,
+    "port": 7000,
+    "messages": {
+        "types" : ["chat"]
+    }
 }

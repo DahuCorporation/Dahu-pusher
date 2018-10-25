@@ -1,6 +1,12 @@
 {
+  "name": "dahu-pusher",
+  "version": "0.1.0",
+  "description": "Dahu's socket service",
   "dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.1.1"
+  },
+  "apidoc": {
+    "title": "Dahu Pusher API"
   }
 }
