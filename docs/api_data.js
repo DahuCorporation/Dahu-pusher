@@ -39,6 +39,40 @@ define({ "api": [
     "groupTitle": "Debug"
   },
   {
+    "type": "post",
+    "url": "/notify/:type/:id",
+    "title": "Notify",
+    "description": "<p>Sends a notification to connected users</p>",
+    "name": "Notify",
+    "group": "General",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "allowedValues": [
+              "\"chat\""
+            ],
+            "optional": false,
+            "field": "type",
+            "description": "<p>Which service to notify</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "id",
+            "description": "<p>UUID or ID of concerned service</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./main.js",
+    "groupTitle": "General"
+  },
+  {
     "type": "get",
     "url": "/status",
     "title": "Status",
