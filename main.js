@@ -71,6 +71,7 @@ if (config.debugmode) {
 
 io.on('connection', socket => {
     console.log('Somebody connected');
+    io.emit('inbound', 'Somebody connected');
 
     socket.on('debug', msg => {
         debugSockets.push(socket);
@@ -78,6 +79,7 @@ io.on('connection', socket => {
 
     socket.on('disconnect', () => {
         console.log('Somebody disconnected.');
+        io.emit('inbound', 'Somebody disconnected');
         debugSockets = debugSockets.filter(s => s === socket);
     });
 
