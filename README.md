@@ -25,6 +25,9 @@ For debug purposes, one can send "msg" events for the sake of transmiting string
 
 It will then be retransmitted on the selected **type** event with the content of the **message** value.
 
+## How to connect to Pusher
+Simply connect the way you would using any Socket.io server and listen for specified events types according to the service you want to be notified about.
+
 ## Generate docs
 ```sh
 apidoc -i . -f "main.js" -o docs
